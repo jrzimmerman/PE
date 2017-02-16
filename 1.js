@@ -1,11 +1,13 @@
+const multiples = (n) => {
+  let sum = 0;
 
-function getMultiples(iter) {
-	var answer = 0;
-	for (var i = 1; i < iter; i++) {
-		if(i % 3 === 0 || i % 5 === 0) {
-			answer += i;
-		}
-	}
-	return answer;
-}
-getMultiples(1000);
+  for (let i = 1; i < n; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum += i;
+    }
+  }
+
+  return sum;
+};
+
+multiples(1000);
